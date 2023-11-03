@@ -1,0 +1,9 @@
+ dumpfile dump.vcd opened for output.
+simtime=0,a=0,b=0,c=0,difference=0,barrow=0
+simtime=5,a=0,b=0,c=1,difference=1,barrow=1
+simtime=10,a=0,b=1,c=0,difference=1,barrow=1
+simtime=15,a=0,b=1,c=1,difference=0,barrow=1
+simtime=20,a=1,b=0,c=0,difference=1,barrow=0
+simtime=25,a=1,b=0,c=1,difference=0,barrow=0
+simtime=30,a=1,b=1,c=0,difference=0,barrow=0
+simtime=35,a=1,b=1,c=1,difference=1,barrow=1
