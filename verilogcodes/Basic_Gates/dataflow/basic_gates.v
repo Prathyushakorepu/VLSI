@@ -20,16 +20,25 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module gates(input a,b,output y0,y1,y2,y3,y4,y5,y6,y7);
+module gates(input a,
+             input b,
+             output BUF_gate,
+             output AND_gate,
+             output  OR_gate,
+             output XOR_gate,
+             output NOT_gate,
+             output NAND_gate,
+             output NOR_gate,
+             output XNOR_gate);
 
-assign y0 = (a);                    //BUF gate
-assign y1 = (a & b);                //AND gate
-assign y2 = (a | b);                //OR gate
-assign y3 = (a ^ b);                //XOR gate
+assign BUF_gate = (a);                    //BUF gate
+assign AND_gate = (a & b);                //AND gate
+assign OR_gate  = (a | b);                //OR gate
+assign XOR_gate = (a ^ b);                //XOR gate
 
-assign y4 = (~ b);                  //NOT gate
-assign y5 = (~(a & b));             //NAND gate
-assign y6 = (~(a | b));             //NOR gate
-assign y7 = (~(a ^ b));             //XNOR gate
+assign NOT_gate  = (~ b);                  //NOT gate
+assign NAND_gate = (~(a & b));             //NAND gate
+assign NOR_gate  = (~(a | b));             //NOR gate
+assign XNOR_gate = (~(a ^ b));             //XNOR gate 
     
 endmodule
