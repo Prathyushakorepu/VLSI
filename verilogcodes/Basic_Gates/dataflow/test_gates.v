@@ -21,10 +21,27 @@
 
 
 module test_gates();
-reg a,b;
-wire y0,y1,y2,y3,y4,y5,y6,y7;
+reg a;
+reg b;
+wire BUF_gate;
+wire AND_gate;
+wire OR_gate;
+wire XOR_gate;
+wire NOT_gate;
+wire NAND_gate;
+wire NOR_gate;
+wire XNOR_gate;
 
-gates  dut(a,b,y0,y1,y2,y3,y4,y5,y6,y7);
+gates  dut(.a(a),
+           .b(b),
+           .BUF_gate(BUF_gate),
+           .AND_gate(AND_gate),
+           .OR_gate(OR_gate),
+           .XOR_gate(XOR_gate),
+           .NOT_gate(NOT_gate),
+           .NAND_gate(NAND_gate),
+           .NOR_gate(NOR_gate),
+           .XNOR_gate(XNOR_gate));
 
 initial 
 begin
